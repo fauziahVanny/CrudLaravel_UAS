@@ -1,3 +1,4 @@
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -38,7 +39,7 @@
                                     </div>
 
                                     <div class="pt-3 sm:pt-5 lg:pt-0">
-                                        <h2 class="text-xl font-semibold text-black dark:text-white">Kabupaten</h2>
+                                        <h2 class="text-xl font-semibold text-black dark:text-white">Indonesia</h2>
                                         <p class="mt-4 text-sm" style="text-align: justify">
                                             Indonesia adalah negara kepulauan terbesar di dunia yang terletak di Asia Tenggara dan Oseania, d
                                             iapit oleh Samudra Pasifik dan Samudra Hindia. Negara ini terdiri dari lebih dari 17.000 pulau, d
