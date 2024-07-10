@@ -10,9 +10,10 @@ class KelolaKabupaten extends Model
     use HasFactory;
     protected $table = 'kelola_kabupatens';
     protected $fillable = [
+        'nama',
+        'nik',
         'kode_pos',
-        'nama_kabupaten',
-        'nama_kecamatan',
-        'nama_provinsi',
+        'alamat',
+        'no_telp',
     ];
 }

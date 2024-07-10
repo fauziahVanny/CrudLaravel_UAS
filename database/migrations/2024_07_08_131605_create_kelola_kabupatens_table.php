@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('kelola_kabupatens', function (Blueprint $table) {
             $table->id();
-            $table->string('kode_pos');
+            $table->integer('kode_pos');
             $table->string('nama_kabupaten');
             $table->string('nama_kecamatan');
             $table->string('nama_provinsi');

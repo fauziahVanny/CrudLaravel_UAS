@@ -18,38 +18,43 @@
                         @method('PUT')
                         <div class="row">
                             <div class="col mb-3">
+                                <label class="form-label">Nama</label>
+                                <input type="text" name="nama" class="form-control" placeholder="Nama" value="{{$kabupaten->nama}}">
+                                @error('nama')
+                                <span class="text-danger">{{$message}}</span>
+                                @enderror
+                            </div>
+                            <div class="col mb-3">
+                                <label class="form-label">Nik</label>
+                                <input type="number" name="nik" class="form-control" placeholder="Nik" value="{{$kabupaten->nik}}">
+                                @error('nik')
+                                <span class="text-danger">{{$message}}</span>
+                                @enderror
+                            </div>
+                            <div class="col mb-3">
                                 <label class="form-label">Kode Pos</label>
                                 <input type="text" name="kode_pos" class="form-control" placeholder="Kode Pos" value="{{$kabupaten->kode_pos}}">
-                                @error('title')
+                                @error('kode_pos')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3">
-                                <label class="form-label">Nama Kabupaten</label>
-                                <input type="text" name="nama_kabupaten" class="form-control" placeholder="Nama Kabupaten" value="{{$kabupaten->nama_kabupaten}}">
-                                @error('title')
+                                <label class="form-label">Alamat</label>
+                                <input type="textarea" name="alamat" class="form-control" placeholder="Alamat" value="{{$kabupaten->alamat}}">
+                                @error('alamat')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3">
-                                <label class="form-label">Nama Kecamatan</label>
-                                <input type="text" name="nama_kecamatan" class="form-control" placeholder="Nama Kecamatan" value="{{$kabupaten->nama_kecamatan}}">
-                                @error('title')
+                                <label class="form-label">No Telp</label>
+                                <input type="number" name="no_telp" class="form-control" placeholder="No Telp" value="{{$kabupaten->no_telp}}">
+                                @error('no_telp')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
-                            </div>
-                            <div class="row">
-                                <div class="col mb-3">
-                                    <label class="form-label">Nama Provinsi</label>
-                                    <input type="text" name="nama_provinsi" class="form-control" placeholder="Nama Provinsi" value="{{$kabupaten->nama_provinsi}}">
-                                    @error('title')
-                                    <span class="text-danger">{{$message}}</span>
-                                    @enderror
-                                </div>
                             </div>
                         </div>
                         

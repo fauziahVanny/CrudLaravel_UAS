@@ -19,11 +19,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
-
 Route::middleware(['auth','admin'])->group(function(){
-    
     Route::get('admin/dashboard',[HomeController::class,'index']);
+
     Route::get('/admin/kabupaten',[DaniController::class,'index'])->name('admin/kabupaten');
     Route::get('/admin/kabupaten/create', [DaniController::class, 'create'])->name('admin/kabupaten/create');
     Route::post('/admin/kabupaten/save', [DaniController::class, 'save'])->name('admin/kabupaten/save');
