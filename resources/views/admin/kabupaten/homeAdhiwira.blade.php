@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Kelola Kabupaten') }}
+            {{ __('Kelola data') }}
         </h2>
     </x-slot>
  
@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h1 class="mb-0">Kelola Kabupaten</h1>
+                        <h1 class="mb-0">Kelola Data</h1>
                         <a href="{{ route('admin/kabupaten/create') }}" class="btn btn-primary">Tambah Data</a>
                     </div>
 
@@ -44,7 +44,11 @@
                                     <td class="align-middle">
                                         <div class="btn-group" role="group" aria-label="Basic example">
                                             <a href="{{ route('admin/kabupaten/edit', ['id' => $item->id]) }}" class="btn btn-secondary">Edit</a>
-                                            <a href="{{ route('admin/kabupaten/delete', ['id' => $item->id]) }}" class="btn btn-danger">Delete</a>
+                                            <form action="{{ route('admin/kabupaten/delete', $item->id) }}" method="POST" onsubmit="return confirm('Yakin ingin menghapus data ini ?');">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
                                         </div>
                                     </td>
                                 </tr>

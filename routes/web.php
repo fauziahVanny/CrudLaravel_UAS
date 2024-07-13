@@ -27,7 +27,7 @@ Route::middleware(['auth','admin'])->group(function(){
     Route::post('/admin/kabupaten/save', [DaniController::class, 'save'])->name('admin/kabupaten/save');
     Route::get('/admin/kabupaten/edit/{id}', [DaniController::class, 'edit'])->name('admin/kabupaten/edit');
     Route::put('/admin/kabupaten/edit/{id}', [DaniController::class, 'update'])->name('admin/kabupaten/update');
-    Route::get('/admin/kabupaten/delete/{id}', [DaniController::class, 'delete'])->name('admin/kabupaten/delete');
+    Route::delete('/admin/kabupaten/delete/{id}', [DaniController::class, 'delete'])->name('admin/kabupaten/delete');
 
 });
 

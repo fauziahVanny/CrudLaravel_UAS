@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     {{ __("You're logged in!") }}
-                    <p></p><a href="kabupaten" class="btn btn-primary">Kelola Kabupaten</a></p>
+                    <p></p><a href="kabupaten" class="btn btn-primary">Kelola Data</a></p>
                 </div>
             </div>
         </div>
