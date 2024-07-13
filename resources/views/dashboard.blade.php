@@ -118,7 +118,7 @@
                                     Visi Pembangunan Jangka Panjang Kabupaten Purwakarta Tahun 2005-2025 adalah Purwakarta Cerdas, Sehat, Produktif, dan 
                                     Berakhlakul Karimah. Untuk mencapai visi ini, disusun 3 Misi Pembangunan, yaitu: meningkatkan derajat kesejahteraan 
                                     masyarakat pada berbagai aspek, meningkatkan kemandirian dalam pemanfaatan sumber daya lokal serta peran masyarakat, dan meningkatkan efektivitas 
-                                    serta efisiensi penyelenggaraan pemerintahan dengan fokus pada profesionalitas, akuntabilitas, dan demokrasi. 
+                                    serta efisiensi penyelenggaraan pemerintahan dengan fokus pada profesionalitas, akuntabilitas, dan demokrasi.
                             </div>
                         </div>
                         
